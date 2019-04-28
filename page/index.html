@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" media="screen and (max-width:767px)" href="./css/media.css">
+    <script src="./js/axios.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="title">我的博客 | 技术博客</a>
+            <ul class="menu">
+                <li><a>首页</a></li>
+                <li><a href="sitemap.html">地图</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="guestbook.html">留言</a></li>
+            </ul>
+            <!-- <div class="search_bar">
+                <input type="text" placeholder="输入关键词查找">
+                <button>搜索</button>
+            </div> -->
+        </div>
+    </header>
+    <div class="content">
+        <div class="content_left">
+            <div class="every_day" id="every_day">
+                <span>每日一句</span>
+                <p v-html='getcontent'></p>
+            </div>
+            <div class="article_list" id="article_list">
+                <div class="article" v-for='(article,index) in articleList' :key = 'article.id'>
+                    <a :href='article.link' class="article_title">{{article.title}}</a>
+                    <p class="article_content">{{article.content}}</p>
+                    <div class="article_foot">{{article.date}} &nbsp浏览次数:{{article.views}} &nbsp标签:{{article.tags}}</div>
+                </div>
+                <div class="page_tool">
+                    <ul>
+                        <li v-for="pageNum in pageNumList" v-on:click="jumpTo(pageNum.page)" v-bind:class="{now_page:(pageNum.text == page)}">{{pageNum.text}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content_right">
+                <!-- <div class="right_moodule" id="random_tags">
+                        <div>随机标签云</div>
+                        <a v-for="tag in tags" v-bind:style="{color:randomColor(), fontSize:randomSize()}" v-bind:href="tag.link">{{tag.text}}</a>
+                    </div> -->
+            <div class="right_moodule" id="new_hot">
+                <div>最近热门</div>
+                <ul>
+                    <li v-for='(item,index) in titleList'><a :href='item.link'>{{item.title}}</a></li>
+                    
+                </ul>
+            </div>
+            <div class="right_moodule" id="new_comments">
+                <div>最新评论</div>
+                <ul>
+                    <li v-for='(item,index) in commentList'>
+                        <div>
+                            <span>{{item.name}}</span>
+                            <span class="pull_right">{{item.date}}</span>
+                        </div>
+                        <p>{{item.comment}}</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="right_moodule">
+                <div>友情链接</div>
+                <span><a href="/">github的</a></span><span><a href="/">github的</a></span>
+                <span><a href="/">github的</a></span><span><a href="/">github的</a></span>
+                <span><a href="/">github的</a></span><span><a href="/">github的</a></span>
+                <span><a href="/">github的</a></span><span><a href="/">github的</a></span>
+                <span><a href="/">github的</a></span><span><a href="/">github的</a></span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>a</li>
+            <li>s</li>
+            <li>c</li>
+            <li>s</li>
+            <li>s</li>
+            <li>s</li>
+            <li>s</li>
+            <li>s</li>
+            <li>s</li>
+            <li>s</li>
+        </ul>
+        <p>Copyright © 2019-2020 卢子豪个人博客 All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/base.js"></script>
+</body>
+
+</html>

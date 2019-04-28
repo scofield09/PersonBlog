@@ -1,0 +1,98 @@
+:root{
+    font-size: 62.5%;
+}
+.every_day{
+    background-color: white;
+    width: 96%;
+    box-shadow: 0.3rem 0.4rem 0.3rem black;
+    text-align: left;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.every_day > span{
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: slateblue;
+}
+.article_list{
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 1.5rem; 
+}
+
+.article{
+    background: white;
+    display: inline-block;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 5px 5px #8888;
+    overflow: hidden;
+    text-align: left;
+    margin-top: 1.5rem;
+    animation: mymove2 1s ease-in-out;
+}
+
+
+.article_title{
+   display: inline-block;
+   font-size: 2rem;
+   text-decoration: none;
+   color: #13102b;
+   padding: 2rem 1rem 0.5rem 1rem;
+   text-align: left;
+   animation: mymove 1s ease-in-out;
+}
+
+@keyframes mymove{
+    0%{
+        opacity: 0;
+        transform: translate3d(100%, 0px, 0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0%, 0px, 0px);
+    }
+}
+
+
+.article_title:hover{
+    color: #337ab7;
+    transition: all 0.2s ease-in;
+    text-shadow:  #888888 0.1em 0.1em 0.2em;
+}
+
+.article_content{
+    font-size: 1.4rem;
+    color: #13102b;
+    padding: 0px 1rem 2rem 1rem;
+    text-align: left;
+    word-wrap: break-word; 
+    word-break: break-all;
+    overflow: hidden;
+    animation: mymove2 1s ease-in-out;
+}
+@keyframes mymove2{
+    0%{
+        opacity: 0;
+        transform: translate3d(0px, 100%, 0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0px, 0%, 0px);
+    }
+}
+
+
+.article_foot{
+    color: #eeeeee;
+    background: #1f1f1f;
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.4rem;
+}
+
+
+
+

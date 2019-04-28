@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+};
+
+
+body{
+    background-color: gray;
+    text-align: center;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #191818;
+}
+
+.container{
+    position: relative;
+    width: 1170px;
+    height: 50px;
+    margin: 0px auto;
+    /* background-color: pink; */
+}
+.title{
+    display: inline-block;
+    float: left;
+    color: #eeeeee;
+    line-height: 50px;
+    text-decoration: none;
+    margin: 0px 15px;
+    font-size: 18px;
+}
+
+.menu{
+    /* background-color: blue; */
+    float: left;
+}
+
+.menu > li{
+    display: inline-block;
+    /* float: left; */
+    height: 50px;
+    width: 58px;
+    color: #eeeeee;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.menu > li >a{
+    text-decoration: none;
+    color: white;
+}
+
+.search_bar > input{
+    display: inline-block;
+    position: absolute;
+    height: 22px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid black;
+    right: 60px;
+    top: calc(50% - 18px);
+}
+.search_bar > button{
+    position: absolute;
+    right: 0px;
+    width: 54px;
+    height: 34px;
+    border-radius: 8px;
+    top: calc(50% - 17px);
+    outline: none;
+    border: 1px solid black;
+}
+
+.content{
+    /* display: inline-block; */
+    position: relative;
+    text-align: center;
+    width: 1170px;
+    margin: 30px auto 0px auto;
+    /* background: blue; */
+}
+
+.content_left{
+    float: left;
+    width: 66%;
+    padding: 0px 20px 0px 0px;
+    box-sizing: border-box;
+    /* background-color: pink; */
+}
+
+.content_right{
+    float: right;
+    width: 34%;
+    padding: 0px 0px 0px 0px;
+    /* background-color: deeppink; */
+}
+
+.right_moodule{
+   display: inline-block;
+   width: 92%;
+   background-color: #1f1f1f;
+   color: white;
+   border-radius: 10px;
+   text-align: left;
+   padding: 0px 15px 25px 15px;
+   margin-bottom: 20px;
+   box-shadow: 0px 0px 5px 5px #777777;
+   
+}
+@keyframes mymove2{
+    0%{
+        opacity: 0;
+        transform: translate3d(110%, 0px, 0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0%, 0px, 0px);
+    }
+}
+
+.right_moodule div{
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    padding: 15px 5px 15px 0px;
+    color:dodgerblue;
+    animation: mymove2 1s ease-in-out;
+}
+
+.right_moodule > a{
+    display: inline-block;
+    font-size: 14px;
+    color:dodgerblue;
+    margin-right: 5px;
+    text-decoration: none;
+    animation: mymove2 1s ease-in-out;
+}
+
+.right_moodule > ul >li{
+    list-style: none;
+    color: white;
+    padding: 8px 0px;
+    border-bottom: 1px solid gray;
+    /* animation: mymove2 1s ease-in-out; */
+}
+
+.right_moodule > ul >li > a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+.right_moodule > ul >li >div{
+    padding: 5px 0px;
+}
+
+.right_moodule > ul >li >div > span{
+    font-size: 14px;
+    color: white;
+}
+.right_moodule > ul >li >p{
+    font-size: 14px;
+    color: #777777;
+}
+
+.pull_right{
+    position: absolute;
+    right: 15px;
+}
+
+
+.right_moodule > span{
+    display: inline-block;
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.right_moodule > span > a{
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+
+footer{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    background-color: #191818;
+    text-align: center;
+}
+
+footer > ul{
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+footer > ul > li{
+    display: inline-block;
+    color: #a2a2a2;
+    /* float: left; */
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: center; 
+}
+
+footer > p{
+    color: #a2a2a2;
+    margin-top: 10px;
+}
+
+
+.page_tool {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.page_tool > ul > li {
+    display: inline-block;
+    list-style: none;
+    width: 40px;
+    height: 30px;
+    background: pink;
+    line-height: 30px;
+    background: white;
+    text-align: center;
+    border: 1px solid black;
+    float: left;
+    cursor: pointer;
+}
+
+.page_tool > ul > li:hover {
+    background: gray;
+}
+
+.now_page {
+    background: #333 !important;
+    color: #fff !important;
+}
+
+
+

@@ -1,0 +1,97 @@
+:root{
+    font-size: 62.5%;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100vw;
+}
+
+
+/* 右侧隐藏 */
+.content .content_right{
+    display: none;
+}
+.right_moodule{
+    display: none;
+}
+
+
+/* 头部 */
+.header{
+    width: 100%;
+    height: 5rem;
+}
+/* 子元素一定要比父元素小或者相等 */
+.container{
+    width: 100%;
+    height: 5rem;
+    margin: 0px auto;
+    position: relative;
+}
+.menu{
+    /* background-color: blue; */
+    float: none;
+    position: absolute;
+    left: calc(50% - 116px);
+}
+
+.menu > li{
+    display: inline-block;
+    /* float: left; */
+    height: 50px;
+    width: 58px;
+    color: #eeeeee;
+    font-size: 14px;
+    line-height: 50px;
+}
+.header .container .title{
+    display: none;
+}
+
+
+/* 左侧 */
+.content{
+    /* display: inline-block; */
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0px auto 0px auto;
+    /* background: blue; */ 
+}
+.content_left{
+    float: left;
+    width: 100%;
+    padding: 0px 20px 0px 0px;
+    box-sizing: border-box;
+    /* background-color: pink; */
+}
+.content_left{
+    width: 100vw;
+}
+.content_left .every_day{
+    display: none;
+}
+.content_left .article_list{
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #13102b;
+    padding: 0px 10px 5px 10px;
+    text-align: center;  
+    /* margin-top: 15px; */
+}
+.article_list{
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 0rem; 
+}
+
+/* 底部 */
+.footer{
+    display: inline-block;
+    width: 100%;
+    height: 6rem;
+    background-color: #191818;
+    text-align: center;
+}

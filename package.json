@@ -1,0 +1,26 @@
+{
+  "name": "personblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scofield09/PersonBlog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scofield09/PersonBlog/issues"
+  },
+  "homepage": "https://github.com/scofield09/PersonBlog#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "svg-captcha": "^1.3.12"
+  },
+  "devDependencies": {
+    "mysql": "^2.16.0"
+  }
+}
