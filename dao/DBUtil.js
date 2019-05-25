@@ -12,7 +12,3 @@ function createConnection(){
 }
 
 module.exports.createConnection = createConnection;
-<<<<<<< HEAD
-
-=======
->>>>>>> 50ef39f2db3add614d4ffc4a502202ffa762ca02
