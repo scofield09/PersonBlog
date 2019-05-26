@@ -1,5 +1,5 @@
 # PersonBlog
-个人博客 mysql+nodejs+vue
+个人博客的 mysql+nodejs+vue
 ├─dao
 ├─node_modules
 │  ├─.bin
