@@ -1,5 +1,5 @@
 # PersonBlog
-个人博客文件里面的文件详情
+个人博客文件夹里面的文件详情
 ```
 ├─dao
 │      BlogDao.js
